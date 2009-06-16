@@ -62,7 +62,7 @@ class ApiFunction(object):
     @property
     def is_read(self):
         """Wheter the function can be called as a read function"""
-        return not getattr(self.func, '_write_only', False)
+        return not getattr(self.func, '_write_only_', False)
 
     @property
     def is_write(self):
