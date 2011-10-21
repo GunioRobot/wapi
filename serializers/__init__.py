@@ -78,7 +78,7 @@ def serialize(format, objs, method=None, out=None, **kwargs):
     fmt = get_formatter(format)(out=out)
     fmt.start()
 
-    if objs is None: 
+    if objs is None:
         fmt.none()
     elif len(objs) == 0:
         fmt.empty()

@@ -46,7 +46,7 @@ class FunctionParameter(object):
         self.validators = validators or []
         if self.validators and not hasattr(self.validators, '__iter__'):
             self.validators = [self.validators]
-        
+
         validator = get_type_validator(param_type)
         if validator and validator.__class__ not in \
                 [v.__class__ for v in self.validators]:

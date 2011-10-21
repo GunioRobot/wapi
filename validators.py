@@ -114,7 +114,7 @@ class DateTimeValidator(Validator):
     def validate(self, value):
         if isinstance(value, datetime.datetime):
             return value
-        
+
         str2datetime = datetime.datetime.strptime
         # trying to guess the format
         if len(value) == 16:
@@ -134,7 +134,7 @@ class DateValidator(Validator):
     def validate(self, value):
         if isinstance(value, datetime.date):
             return value
-        
+
         str2date = datetime.date.strptime
         # trying to guess the format
         if len(value) == 10:
@@ -149,7 +149,7 @@ class TimeValidator(Validator):
     def validate(self, value):
         if isinstance(value, datetime.time):
             return value
-        
+
         str2time = datetime.time.strptime
         # trying to guess the format
         if len(value) == 5:

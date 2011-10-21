@@ -32,7 +32,7 @@ class ApiAuthBasic(ApiAuth):
         """Override this and implement the logic for your authentication
         method. You are supposed to return ``None`` if authentication
         succeeded, ``self.authentication_failed`` otherwise.
-        
+
         If the authentication succeeded you should also set request.user
         to the authenticated User."""
         raise NotImplementedError

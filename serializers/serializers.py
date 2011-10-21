@@ -10,9 +10,9 @@ class Serialization(object):
     def __init__(self, name, method):
         self.name = name
         self.method = method
-    
+
     def apply(self, obj, **kwargs):
-        return (self.name, self.method(obj, **kwargs)) 
+        return (self.name, self.method(obj, **kwargs))
 
 class NoSerializationMethod(RuntimeError):
     pass
